@@ -17,7 +17,7 @@ gdf = gpd.read_postgis(
     "SELECT * FROM microsoftbuildingfootprint;", con=engine, geom_col="geom")
 
 
-iller = gpd.read_file("data\gadm40_TUR_1.shp")
+iller = gpd.read_file("data\\gadm40_TUR_1.shp")
 iller = iller.to_crs(4326)
 
 
